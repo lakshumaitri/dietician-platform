@@ -23,7 +23,7 @@ function AdminDashboard() {
     try {
 
       const response = await fetch(
-        "http://127.0.0.1:5000/users"
+        '${import.meta.env.VITE_API_URL}users',
       );
 
       const data = await response.json();
@@ -41,7 +41,7 @@ function AdminDashboard() {
     try {
 
       const response = await fetch(
-        "http://127.0.0.1:5000/all-bookings"
+        '${import.meta.env.VITE_API_URL}/all-bookings',
       );
 
       const data = await response.json();
@@ -59,7 +59,7 @@ function AdminDashboard() {
     try {
 
       const response = await fetch(
-        "http://127.0.0.1:5000/all-messages"
+        '${import.meta.env.VITE_API_URL}/all-messages',
       );
 
       const data = await response.json();
