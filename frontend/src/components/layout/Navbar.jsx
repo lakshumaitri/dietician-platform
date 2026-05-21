@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { HiOutlineMenuAlt3, HiX } from "react-icons/hi";
+import { HiOutlineMenuAlt3, HiX } from "react-icons/hi2";
 import { useState } from "react";
 
 function Navbar({ setIsOpen }) {
